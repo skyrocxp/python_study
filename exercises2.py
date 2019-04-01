@@ -1,10 +1,11 @@
+# ZYF-02-基础-字符串拼接
 # 什么是BIF？ Python3提供了多少个BIF
 
-# BIF是内建函数，Python3提供了68个内建函数
+# 答:BIF是内建函数，Python3提供了68个内建函数
 
 # Tuling和tuling一样吗？
 
-# 不一样，Python严格区分大小写
+# 答:不一样，Python严格区分大小写
 
 # 字符串的拼接
 "我喜欢" + "韩雪雪" + "韩雪雪也喜欢我"
@@ -25,6 +26,7 @@ else:
 
 # 老师教的
 temp = input('请输入1-100之间的整数：')
+# .isdigit判断是否由数字组成
 if temp.isdigit():
     temp = int(temp)
     if 1 <= temp <= 100:
