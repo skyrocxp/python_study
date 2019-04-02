@@ -1,7 +1,7 @@
 # LY-05-for
 # 简单图形打印
 '''
-打印一下图形在输出上面
+打印以下图形在输出上面
 *
 * *
 * * *
@@ -32,12 +32,72 @@ print("------我-是-华-丽-的-分-割-线-------")
 '''
 # 第一个方法,直接使用Print
 # 第二个方法,使用for循环
-for i in range(15):
+for i in range(5):
     for j in range(i+1):
-        if i == 14:
+        if i == 4:
             print("* ",end = "")
         elif j == 0 or j == i:
             print("* ",end = "")
         else:
             print("  ",end = "")
     print()
+print("------我-是-华-丽-的-分-割-线-------")
+
+'''
+打印以下图形在输出上面
+
+* * * * *
+* * * *
+* * *
+* *
+*
+'''
+# i-for控制行号
+# j-for控制列号
+for i in range(5):
+    for j in range(5-i):
+        print("* ",end="")
+    print()
+print("------我-是-华-丽-的-分-割-线-------")
+
+# i-for控制行号
+# j-for控制列号
+for i in range(5,0,-1):
+    for j in range(i,0,-1):
+        print("* ",end="")
+    print()
+print("------我-是-华-丽-的-分-割-线-------")
+
+'''
+打印空三角
+
+* * * * *
+*     *
+*   *
+* *
+*
+'''
+for i in range(5):
+    for j in range(5-i):
+        if i == 0:
+            print("* ",end = "")
+        elif j == 0 or j == 5-i-1:
+            print("* ",end = "")
+        else:
+            print("  ",end = "")
+    print()
+print("------我-是-华-丽-的-分-割-线-------")
+'''
+打印三角形,正三角形
+
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+'''
+for i in range(5):
+    # 总体思路是,先打印一行空格,代表星星前的空格
+    # 再不换行,打印星号
+    for j in range(i+1):
+
