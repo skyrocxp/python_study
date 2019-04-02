@@ -96,8 +96,38 @@ print("------我-是-华-丽-的-分-割-线-------")
  * * * *
 * * * * *
 '''
-for i in range(5):
+for i in range(1,6):
     # 总体思路是,先打印一行空格,代表星星前的空格
     # 再不换行,打印星号
-    for j in range(i+1):
+    for j in range(6-i):
+        print(" ",end = "")
+    for k in range(i):
+        print("* ",end = "")
+    print()
+print("------我-是-华-丽-的-分-割-线-------")
+'''
+打印空正三角形
 
+    *
+   * *
+  *   *
+ *     *
+* * * * *
+'''
+for i in range(1,6):
+    # 总体思路是,先打印一行空格,代表星星前的空格
+    # 再不换行,打印星号
+    if i == 1:
+        print(" "*(6-i)+"*")
+    elif i == 5:
+        print(" "+"* "* 5)
+    else:
+        for j in range(4-i):
+            print(" ", end = "")
+        for k in range(i+1):
+            if k == 1 or k == i:
+                print("* ",end = "")
+            else:
+                print("  ",end = "")
+        print()
+print("------我-是-华-丽-的-分-割-线-------")
